@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heir - Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style type="text/css">
+        input:focus, textarea:focus, select:focus {
+            background-color: #ffffcc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="header">
+            <h1>Heir</h1>
+            <p>Sign Up Page</p>
+        </div>
+
+        <div class="menu">
+            <a href="index.html">Home</a> |
+            <a href="login.html">Login</a> |
+            <a href="signup.html">Sign Up</a> |
+            <a href="about.html">About Us</a>
+        </div>
+
+        <div class="sectionBox">
+            <h2>Create Account</h2>
+
+            <img src="heir.jpg" alt="Heir Image" usemap="#heirmapsignup" width="400" height="200" class="mainImage">
+
+            <map name="heirmapsignup">
+                <area shape="rect" coords="0,0,400,200" href="about.html" alt="About Us">
+            </map>
+
+            <form action="#" method="post">
+                <p>
+                    <label>Full Name:</label><br>
+                    <input type="text" name="fullname" size="30">
+                </p>
+
+                <p>
+                    <label>Email:</label><br>
+                    <input type="email" name="email" size="30">
+                </p>
+
+                <p>
+                    <label>Phone:</label><br>
+                    <input type="tel" name="phone" size="30">
+                </p>
+
+                <p>
+                    <label>Main Use:</label><br>
+                    <select name="useType">
+                        <option>Family</option>
+                        <option>Company</option>
+                        <option>Community</option>
+                        <option>Education</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label>Description:</label><br>
+                    <textarea name="description" rows="4" cols="35"></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" value="Sign Up" style="color: white; background-color: darkgreen;">
+                </p>
+            </form>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 Heir</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
