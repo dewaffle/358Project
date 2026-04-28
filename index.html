@@ -1,3 +1,6 @@
+# Updated index.html
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,16 +24,6 @@
             color: red;
         }
     </style>
-
-    <script type="text/javascript">
-
-        function start(){
-            document.getElementById("loadMessage").innerHTML =
-            "Welcome to Heir Website";
-        }
-
-    </script>
-
 </head>
 
 <body onload="start()">
@@ -73,4 +66,100 @@
                 id="homeImage"
                 src="heir.jpg"
                 alt="Heir Image"
+                usemap="#heirmap"
+                width="500"
+                height="250"
+                class="mainImage"
+                onmouseover="mouseOverMessage()"
+                onmouseout="mouseOutMessage()">
+
+            <map name="heirmap">
+                <area shape="rect" coords="0,0,500,250" href="about.html" alt="About Us">
+            </map>
+
+            <p id="dynamicText">
+                Original project message
+            </p>
+
+            <p id="hoverMessage"></p>
+
+            <button onclick="changeHomeContent()">
+                Change Content
+            </button>
+
+            <br><br>
+
+            <button onclick="createList()">
+                Show Dynamic Elements
+            </button>
+
+            <div id="dynamicArea"></div>
+        </div>
+
+        <div class="sectionBox">
+            <article>
+                <h2>Benefits of Heir</h2>
+                <ul>
+                    <li>Shows relationship structure clearly</li>
+                    <li>Helps preserve long-term connections</li>
+                    <li>Can be used in more than one field</li>
+                    <li>Makes information easier to follow</li>
+                </ul>
+            </article>
+        </div>
+
+        <div class="sectionBox">
+            <section>
+                <h2>Possible Uses</h2>
+                <table border="1" class="tableStyle">
+                    <tr>
+                        <th>Area</th>
+                        <th>Use</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>Family</td>
+                        <td>Show relatives and family branches</td>
+                        <td>Family tree</td>
+                    </tr>
+                    <tr>
+                        <td>Company</td>
+                        <td>Show departments and reporting lines</td>
+                        <td>Organization chart</td>
+                    </tr>
+                    <tr>
+                        <td>Education</td>
+                        <td>Show research or student groups</td>
+                        <td>Project teams</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+
+        <div class="sectionBox">
+            <h2>Internal Link Example</h2>
+            <p><a href="#top">Go to the top of this page</a></p>
+        </div>
+
+        <div class="sectionBox layerArea">
+            <h2>Layering Example</h2>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="box1">Background<br>Box</div>
+            <div class="box2">Front Box using z-index</div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 Heir</p>
+        </div>
+
+    </div>
+
+</body>
 </html>
