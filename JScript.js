@@ -1,6 +1,23 @@
 function changeHomeContent()
 {
-    alert("Button works");
+    var img = document.getElementById("homeImage");
+    var text = document.getElementById("dynamicText");
+
+    // Check if the current image source contains 'family.jpg'
+    if (img.src.match("family.jpg")) 
+    {
+        // Revert to original state
+        img.src = "heir.jpg";
+        text.innerHTML = "Original project message";
+        text.style.color = "black";
+    } 
+    else 
+    {
+        // Change to the new state
+        img.src = "family.jpg";
+        text.innerHTML = "The image and text were changed using JavaScript.";
+        text.style.color = "darkgreen";
+    }
 }
 
 function mouseOverMessage()

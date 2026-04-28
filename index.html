@@ -76,19 +76,22 @@
                 usemap="#heirmap"
                 width="500"
                 height="250"
-                class="mainImage"
-                onmouseover="mouseOverMessage()"
-                onmouseout="mouseOutMessage()">
+                class="mainImage">
 
             <map name="heirmap">
-                <area shape="rect" coords="0,0,500,250" href="about.html" alt="About Us">
+                <area 
+                    shape="rect"
+                    coords="0,0,500,250"
+                    href="about.html" alt="About Us"
+                    onmouseover="mouseOverMessage()"
+                    onmouseout="mouseOutMessage()">
             </map>
 
             <p id="dynamicText">
                 Original project message
             </p>
 
-            <p id="hoverMessage"></p>
+            <p id="hoverMessage">Mouse did not hover over the image yet.</p>
 
             <button onclick="changeHomeContent()">
                 Change Content
